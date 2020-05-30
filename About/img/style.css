@@ -1,0 +1,361 @@
+
+.container {
+  display: grid;
+}
+
+
+
+main {
+  background-color: gray;
+  display:flex;
+  grid-area: main;
+  justify-content: center;
+  display: block;
+  text-align: center;
+  color: black;  
+  font-style: italic;
+}
+
+main img {
+ max-width: 10%;
+ height: auto;
+
+ position: absolute;
+  left:5px;
+  top:0px;
+
+}
+
+.myname {
+  font-size: 40px;
+  font-style: oblique;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.NFPA70E, .Training, .NFPA70E, .NETA, .Ranch,.Contact,.EngStudies,.Coding,.Photo {
+  display: block;
+  background-color:gray;
+  color: white;
+  padding-left: 4px;
+  padding-right: 20px;
+  border-color:black;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-right-style: solid;
+}
+
+
+.Experience
+{
+  display: block;
+  background-color:gray;
+  color: white;
+  padding-left: 4px;
+  padding-right: 40px;
+  border-color:black;
+  border-bottom-style: solid;
+  border-top-style: solid;
+}
+.title1,.title2,.title3,.title4,.title5,.title6,.title7{
+  display: block;
+  background-color: black;
+  color: white;
+  padding-left: 4px;
+  padding-right: 40px;
+  border-color:black;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-top-style: solid;
+}
+
+* {
+  border-width: thin;
+}
+
+.title0 {
+  display: block;
+  background-color: gray;
+  color: white;
+  padding-left: 4px;
+  padding-right: 40px;
+  border-color:black;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  
+}
+
+/*nav {
+  text-align: center;
+}*/
+
+/*
+nav > p {
+  text-align: center;
+  color: white;
+}
+*/
+
+
+
+
+ .NFPA70E > img,.Coding > img, .Ranch > img {
+  width: 55%;
+  height: auto;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  
+}
+
+.EngStudies >img {
+  width: 50%;
+  height: auto;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  
+}
+.Training > img {
+  width: 95%;
+  height: auto;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  
+}
+
+.NETA > img {
+  padding-right: 25px;
+  padding-bottom: 50px;
+  height: 200px;
+  width: auto;
+  
+}
+/*
+ .Experience >ul {
+  text-align: left ;
+    
+}*/
+
+.Experience {
+  grid-area: Experience;
+  display: flex;
+  padding: 40px;
+ 
+  
+
+}
+  .Experience > a {
+    align-self: initial;
+  }
+
+.NFPA70E {
+  grid-area: NFPA70E;
+  display:inline;
+  padding-top: 20px;
+  
+  
+}
+
+
+.title0 {
+  grid-area: title0;
+  padding: 0px;
+}
+.title1 {
+  grid-area: title1;
+  padding: 0px;
+}
+.title2 {
+  grid-area: title2;
+  padding: 0px;
+}
+.title3 {
+  grid-area: title3;
+  padding: 0px;
+}
+.title4 {
+  grid-area: title4;
+  padding: 0px;
+}
+.title5 {
+  grid-area: title5;
+  padding: 0px;
+}
+.title6 {
+  grid-area: title6;
+  padding: 0px;
+}
+.title7 {
+  grid-area: title7;
+  padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+.Training {
+  grid-area: Training;
+  padding-top: 20px;
+}
+
+.NETA {
+  grid-area: NETA;
+  padding-top: 20px;
+}
+
+.EngStudies {
+  grid-area: EngStudies;
+  padding-top: 20px;
+}
+
+.Ranch {
+  grid-area: Ranch;
+  padding-top: 20px;
+}
+
+
+
+.Contact {
+  grid-area: Contact;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+
+
+
+.Photo {
+  grid-area: Photo;
+  padding-top: 20px;
+  padding-left: 100px;
+}
+.Coding {
+  grid-area: Coding;
+  padding-top: 20px;
+}
+
+
+
+.tit {
+  font: bold;
+  display: block;
+  font-size: 20px;
+  transform: rotate(270deg);
+  position: relative;
+  top: 50%;
+  padding: 0px;
+ 
+}
+
+
+@media (min-width: 655px) {
+  .container {
+    grid-template-columns: 5% 45% 5% 45%;
+    grid-template-areas:
+      "main main main main"
+      "title1 Experience title0 Photo"
+      "title2 NFPA70E title3 Training"
+      "title4 NETA title5 EngStudies"
+      "title6 Ranch title7 Coding"
+      "Contact Contact Contact Contact"
+          
+  }
+  
+}
+
+@media (max-width: 656px) {
+  .container {
+    grid-template-columns: 10% 90%;
+    grid-template-areas:
+      "main main "
+      "title1 Experience"
+      "title0 Photo"
+      "title2 NFPA70E"
+      "title3 Training"
+      "title4 NETA"
+      "title5 EngStudies"
+      "title6 Ranch"
+      "title7 Coding"
+      "Contact Contact"
+      
+      
+      
+  }
+
+  .title0 {
+    display: block;
+    background-color:black;
+    color: white;
+    padding-left: 4px;
+    padding-right: 40px;
+    border-color:black;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    
+  }
+  .Training > img {
+    max-width: 95%;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    
+  }
+  .NETA > img {
+    max-width: 50%;
+    
+  }
+  .NFPA70E > img, .Coding > img, .Ranch > img {
+    width: 165px;
+    height: 112.5px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    
+  }
+
+  .EngStudies >img{
+    width: 165px;
+    height: 112.5px;
+    padding-right: 25px;
+    display: block;
+    
+  }
+  .Contact {
+    padding-top: 0px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    vertical-align: top;
+    }
+/* 
+  img {
+    width: 100px;
+    height: 75px;
+    padding-right: 25px;
+  }  
+  
+  .Photo {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+ 
+
+  .Experience, .NFPA70E, .Training, .NFPA70E, .NETA, .Ranch,.Contact,.EngStudies,.Coding,.Photo{
+    background-color: rgb(241, 240, 240);
+    color: black;
+        
+  }
+
+  nav > p {
+        color: black;
+  }
+
+  main {
+    background-color: blue;
+      
+  }*/
+  
+}

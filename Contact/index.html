@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="main.js"></script>
+<title>Contact Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+  <div class="entireheader">
+    <div class="myname"><a>Mark Pustejovsky's Site</a></div>
+    <div class="header">
+      <div class="conthead">
+      <img src="./img/myProfilePic.png" class="logo" alt="Photo of Mark P"></div>
+    <div class="Links">
+      <a href="https://mpustejovsky.github.io/hairSalonWebsite/" target="" >RESUME</a>
+      <a href="https://mpustejovsky.github.io/hairSalonWebsite/About" target="">ABOUT ME</a>
+      <a href="https://mpustejovsky.github.io/hairSalonWebsite/Hairstyles" target="">MY BLOG</a>
+      <a href="https://mpustejovsky.github.io/hairSalonWebsite/News" target="">PORTFOLIO</a>
+      <a href="https://mpustejovsky.github.io/hairSalonWebsite/Contact" target="">CONTACT ME</a>
+    </div>
+    </div>
+    
+    <div class="header2"> 
+      <img src="./img/myProfilePic.png" class="logo" alt="Photo of Mark P"> <div class="Infomess"></div>
+    </div>
+    <div class="mobile-container"></div>
+   
+<div class="topnav">
+  <a href="" class="testheight"></a>
+  <div id="myLinks">
+    <a href="https://mpustejovsky.github.io/hairSalonWebsite/" class="active">HOME</a>
+    <a href="https://mpustejovsky.github.io/hairSalonWebsite/About">RESUME</a>
+    <a href="https://mpustejovsky.github.io/hairSalonWebsite/Hairstyles">ABOUT ME</a>
+    <a href="https://mpustejovsky.github.io/hairSalonWebsite/News">MY BLOG</a>
+    <a href="https://mpustejovsky.github.io/hairSalonWebsite/Contact">PORTFOLIO</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    </div>
+    </div>
+    </div>
+
+
+<main>
+
+<div class="title">Contact Me</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, massa egestas semper interdum, mauris nisi faucibus quam, a aliquam justo tellus malesuada orci. Quisque congue augue a mauris facilisis.interdum, mauris nisi faucibus quam, a aliquam justo tellus malesuada orci. Quisque congue augue a mauris facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, massa egestas semper interdum, mauris nisi faucibus quam, a aliquam justo tellus malesuada orci. Quisque congue augue a mauris facilisis.interdum, mauris nisi faucibus quam, a aliquam justo tellus malesuada orci. Quisque congue augue a mauris facilisis.</p>
+  <br>
+  
+  <p>Address: 11875 Kemp, TX 75143</p>
+  <p>Office Phone: (800) 1We-CutH</p>
+  <p>Fax Number: You must be very old</p><br><br>
+  <p>Please Fill out the form below for us to contact you.  Items with * are required.</p><br>
+
+  <div class="parallax"></div>
+
+<form class="ContactData" onsubmit= "myFunction2()">
+  <div class="Step1">
+   
+    
+  <label for="first-name">*First Name:</label>
+  <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
+  <input type="text" id="first-Name" name="first-Name" placeholder="first name" size="18" required onkeyup="saveFirstName(this.value)">
+  <h9><br></h9>
+  <label for="last-name"><br>*Last Name:</label>
+  <input type="text" id="last-Name" name="last-Name" placeholder="last name" size="18" required>
+  <h9><br></h9>
+  <label for="email-address"><br>*Email address:</label>
+  <input type="email" id="email-address" name="email-address" size="18"formnovalidate="formnovalidate" placeholder="type your email address" required>
+  
+  <h7><br> </h7>  
+</div>
+  <div class="Step2">
+    <a>How did you here about me?<br></a>
+    <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
+    
+      <input class="where" type="radio" name="source" value="Classmate" checked>
+      <label>Classmate</label><br>
+      <input class="where" type="radio" name="source" value="Resume">
+      <label>Resume Submission</label><br>
+    
+        <input class="where" type="radio" name="source" value="Linkedin">
+        <label>LinkedIn</label><br>
+         <input class="where" type="radio" name="source" value="Coding">
+         <label>Coding Academy</label><br>
+      <input class="where" type="radio" name="source" value="Workplace">
+      <label>Workplace</label><br>
+    
+  </div>
+ 
+  <div class="Step3">
+    <a>Enter your Birthday, if you want to receive special deals from me on your b-day.(optional)<br></a>
+  <!-- this "onclick" calls the "equal" function in the main.js file -->
+      <input type="date" id="bday" name="bday" >  
+  
+  
+</div>
+<div class="Step4">
+  <a>Enter a message of how I can help you<br></a>
+  <textarea rows="4" cols="40" placeholder="comments......"></textarea>
+</div>
+<div class = "Step5">
+  <button class="submitbutton" type="submit">Submit</button>
+  </div>
+  <div class="Stepblank"></div>
+</form>
+
+</main>
+
+
+
+
+<div class="footer">   
+  <div class="typing"> © copyright 2023 | all rights reserved</div>
+
+   
+</div>
+
+</body>
+</html>

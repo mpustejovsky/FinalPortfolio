@@ -1,0 +1,345 @@
+@font-face{
+  font-family: electrical;
+  src: url(./img/electrical.ttf);
+}
+
+
+
+dl {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ .logo {   
+   width: 150px; 
+   margin: 10%, 1%;
+   margin-left: 5%;
+   margin-top: -30px;
+   margin-bottom: -30px;
+   z-index: 2;
+   
+ }
+
+ 
+ .entireheader {
+  background-color: rgb(100, 145, 100);
+}
+  .conthead{
+    width: 20%;
+    }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  .header {
+    display: flex;
+    height: 90px;
+    background-color: rgb(100, 145, 100);
+    justify-content: right; 
+    width: 100%;    
+  }
+ 
+  .myname {
+    background-color: rgb(100, 145, 100);
+    text-align: center;
+    padding-top: 30px;
+    
+ 
+  }
+
+  .myname >  a {
+
+    font-family: electrical;
+    font-size: 30px;
+    margin-left:80px;
+  }
+
+  .topnav{
+   height: auto;
+  }
+
+  .Links {
+    width: 80%;  
+   
+    align-self: flex-end;
+    margin-bottom: 8px;
+    
+    }
+   
+.header a:link, .header a:visited {    
+    
+    background: Black;
+    border-radius: 10%;
+    padding: 1%;
+    font-size: 15px;
+    
+    color: white;
+    text-decoration: none;   
+    text-align: center; 
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+ body {
+
+   background-color: lightgray;
+ }
+
+main{
+  padding-top: 30px;
+  padding-left: 100px;
+  width: 90%;
+}
+
+main p{
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
+.title{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+
+.parallax {
+     
+  background-image: url("./img/substationback.jpg");
+
+  /* Set a specific height */
+  min-height: 200px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+  .footer {
+    background-color: rgb(100, 145, 100);
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 75px;
+    text-align: center;
+    
+  }
+
+  
+  .Step1 {
+    padding: 0px;
+    padding-top: 0px;
+    grid-area: st1;
+  }
+  .Step2 {
+    padding-bottom: 20 px;
+    padding-top: 0px;
+    grid-area: st2;
+  
+    padding-left: 35px;
+    
+  }
+  
+  .Step2 input {
+    display: inline-block;
+    
+  }
+  .Step3 {
+    padding-bottom: 20 px;
+    padding-top: 20px;
+    grid-area: st3;
+   
+  }
+  .Step4 {
+    padding-bottom: 20 px;
+    padding-top: 20px;
+    grid-area: st4;
+  }
+  .Step5 {
+    padding-bottom: 20 px;
+    padding-top: 20px;
+    grid-area: st5;
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+  
+   button {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-30%);
+    
+  }
+   
+  body {
+    background-color: gray;
+  }
+  
+  .Stepblank {
+    padding-bottom: 20 px;
+    padding-top: 20px;
+    grid-area: stblank;
+  }
+  .Step1, .Step2, .Step3, .Step4, .Step5, .Stepblank{
+    display: block;
+    background-color:gray;
+    color: white;
+    padding-left: 4px;
+    padding-right: 20px;
+    border: gray;
+    border-width: 20px;
+  }
+  
+  .Step2, .Step1{
+    padding-top: 10px;
+  }
+  @media (max-width: 799px) {
+    .container {
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "st1"
+        "st2"
+        "st3"
+        "st4"
+        "st5"
+        "stblank"
+    }
+ 
+    button {
+      height: 60px;
+      width: 50%;
+      padding: 20px;
+    }
+
+    main{
+      padding-top: 30px;
+      padding-left: 40px;
+      width: 80%;
+      font-size: 25px;
+    }
+
+
+
+
+    .title{
+      font-size: 35px;
+    }
+
+    form, input{
+      font-size: 25px;
+    }
+                  /* section is for mobile menue*/
+       .header {
+        opacity: 0;
+        height: 0px;
+      }
+
+      .header2 img{
+        width: 90px;
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+      .header2{
+        height: 60px;
+        background-color: rgb(100, 145, 100);
+        
+      }
+      .myname >  a {
+
+       font-family: electrical;
+       font-size: 12px;
+       margin-left: 0px;
+     }
+
+     .testheight{
+       height:30px;
+       background-color: rgb(100, 145, 100);
+       margin: 0px;
+     }
+
+          .Infomess{
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 20px;
+            
+          }
+          .mobile-container {
+            max-width: 480px;
+            margin: auto;
+            background-color: #555;
+            height: auto;
+            color: white;          
+             
+          }
+          
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+          }
+          
+          .topnav #myLinks {
+            display: none;
+          }
+          
+          .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+          }
+          
+          .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .active {
+            background-color: rgb(100, 145, 100);
+            color: white;
+          }
+  
+          /*end of mobile menu*/
+  }
+  
+        
+        @media (min-width: 800px) {
+          .topnav {
+            opacity: 0;
+            height: 0px;
+          }
+          .header2 {
+            opacity: 0;
+            height: 0px;
+            background-color: lightgrey;
+          }
+
+          .ContactData {
+            display: grid;
+              grid-auto-columns: 45% 45% 10%;
+              grid-template-areas: 
+              "st1 st2 stblank"
+              "st3 st4 st5"
+            }
+  
+        }
+  
+
+  
+
+ 
+  

@@ -1,0 +1,625 @@
+@font-face{
+  font-family: electrical;
+  src: url(./img/electrical.ttf);
+}
+
+ dl {
+   margin-top: 0px;
+   margin-bottom: 0px;
+ }
+  .logo {   
+    width: 150px; 
+    margin: 10%, 1%;
+    margin-left: 5%;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    z-index: 2;
+    
+  }
+
+  .entireheader {
+    background-color: rgb(100, 145, 100);
+  }
+
+  .conthead{
+  width: 20%;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  .header {
+    display: flex;
+    height: 90px;
+    background-color: rgb(100, 145, 100);
+    justify-content: right; 
+    width: 100%;    
+  }
+ 
+  .myname {
+    background-color: rgb(100, 145, 100);
+    text-align: center;
+    padding-top: 30px;
+    
+ 
+  }
+
+  .myname >  a {
+
+    font-family: electrical;
+    font-size: 30px;
+    margin-left:80px;
+  }
+
+  .topnav{
+   height: auto;
+  }
+
+  .Links {
+    width: 80%;  
+   
+    align-self: flex-end;
+    margin-bottom: 8px;
+    
+    }
+   
+.header a:link, .header a:visited {    
+    
+    background: Black;
+    border-radius: 10%;
+    padding: 1%;
+    font-size: 15px;
+    
+    color: white;
+    text-decoration: none;   
+    text-align: center; 
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+ .bodycontainer {
+   background-color: lightgray;
+  
+
+ }
+ 
+ .leftmarg{
+  grid-area: leftm;
+  
+}
+.rightmarg{
+grid-area: rightm;
+}
+
+#WelcomeArea {
+  
+  background-image: url(./img/puzzle1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: welcomea;
+  width: 90%;  
+  color:  black;
+  height: 200px;
+  border-width: 20px;
+  margin-top: 50px; 
+  padding-bottom: 100px;
+  border-width: 10px;
+  border: #3F729B;
+  border-style: solid;
+  border-radius: 20px;
+  background-color:white;
+  text-align: top;
+  margin-bottom: 20px;
+  margin-left: 15px;
+
+}
+
+
+
+#wpar {
+  padding-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: white;
+  box-shadow: 5px 10px 20px;
+  border-radius: 20px;
+  font-size: 18px; 
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#WelcomeArea2 {
+  
+  background-image: url(./img/html.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: welcomea2;
+  width: 80%;  
+  color:  white;
+  height: 100px;
+  border-width: 20px;
+
+  padding-bottom: 100px;
+  border-width: 10px;
+  border: #3F729B;
+  border-style: solid;
+  border-radius: 20px;
+  background-color:white;
+  
+  text-align: top;
+  margin-bottom: 80px;
+  margin-left: 10%;
+  max-width: 400px;
+}
+
+
+
+#wpar2 {
+  padding-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  background-color: lightgrey;
+  border-radius: 20px;
+  font-size: 20px; 
+}
+
+#WelcomeArea3 {
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 10px 20px;
+  grid-area: welcomea3;
+  width: 80%;  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color:  black;
+
+  border-width: 20px;
+  margin-top: 70px; 
+  border-width: 10px;
+  border: #3F729B;
+  border-style: solid;
+  border-radius: 20px;
+  background-color:white;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 11%;
+  max-width: 390px;
+  
+  
+}
+.area1 {
+  grid-area: area1;
+  
+}
+
+.area1 p,.area2 p,.area3 p,.area4 p {
+  margin: 0px;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 20px;
+}
+.area2 {
+  grid-area: area2;
+
+}
+
+.area3 {
+  grid-area: area3;
+  
+}
+.area4 {
+  grid-area: area4;
+  
+}
+.area1, .area2, .area3, .area4{
+  padding-left: 5%;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.areabackground1, .areabackground2,.areabackground3, .areabackground4{
+  width: 175px;
+  height: 175px;
+  border-width: 10px;
+  border: #3F729B;
+  border-style: solid; 
+  background-size: cover;
+}
+
+.areabackground1{
+  background-image: url(./img/substation.jpg);
+  background-position: center; 
+}
+
+.areabackground2{
+  background-image: url(./img/Ranchfish.jpg);
+}
+
+.areabackground3{
+  background-image: url(./img/blog.jpg);
+  background-position: center; 
+}
+
+.areabackground4{
+  background-image: url(./img/portfolio.jpg);
+  background-position: center; 
+}
+
+
+.LowerFeatured img{
+  width: 100px;
+  margin-top: 50px;
+  margin-left: 20px;
+  
+}
+
+
+.featurecont{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  
+}
+
+
+
+.LowerFeatured {
+  grid-area: lowerarea1;
+  border-width: 10px;
+  border: #3F729B;
+  border-style: solid; 
+  margin-top: 50px;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 20px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.LowerHairstyle1{
+  grid-area: lowerarea2;
+  height: 200px;
+  border-width: 10px;
+  border: #3F729B;
+  border-style: solid; 
+  margin-top: 50px;
+  background-color: rgb(100, 145, 100);
+  font-size: 12px;
+  line-height: 16px;
+  font-style: italic;
+  color: white;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  
+ }
+
+.mynamebot{
+   text-align: right;
+  font-size: 20px;
+}
+
+
+.LowerHairstyle2 img{
+
+  margin-top: -22px;
+  margin-left: 0px;  
+  height: 90%;
+}
+
+
+.bottomblocktext{
+  position: absolute;
+  padding-left: 5px;
+  padding-top: 30px;
+  padding-right: 125px;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  }
+
+.maintext {
+  font-size: 20px;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+.LowerHairstyle2{
+  grid-area: lowerarea3;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-left: 1%;
+  border-width: 10px;
+  border: #3F729B;
+  border-style: solid; 
+  display: inline-block;
+  background-color: rgb(100, 145, 100);
+  }
+
+.LowerHairstyle1 a,.LowerFeatured a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: 30px;
+}
+
+  .footer {
+    background-color: rgb(100, 145, 100);
+    width: 100%;
+    padding-top: 25px;   
+    padding-bottom: 25px; 
+    text-align: center;
+    
+  }
+
+  .footer a {
+    margin-left: 5px;
+    margin-right: 5px;
+    float: right;    
+  }
+
+  .footer img {
+    width: 35px;
+     }
+
+  .needsmaller {
+    max-width: 20px;
+  }
+  
+
+  @media (max-width: 800px) {
+       
+    .bodycontainer{
+      display: grid;  
+      grid-template-columns: 2% 48% 48% 2%;
+      grid-template-areas: 
+          "leftm welcomea welcomea rightm"
+          "leftm area1 area2 rightm"
+          "leftm area3 area4 rightm"
+          "leftm lowerarea1 lowerarea1 rightm"
+          "leftm lowerarea2 lowerarea2 rightm"
+          "leftm lowerarea3 lowerarea3 rightm";  
+    }
+
+/*Hide this areas for mobile not in use*/
+    #WelcomeArea2 {
+      display: none;
+         }
+    
+    
+    
+    #wpar2 {
+      display: none;
+    }
+    
+    #WelcomeArea3 {
+     
+     display: none;     
+      
+    }
+
+    /*end hiding of area*/
+
+    /* change shape of photo*/
+#WelcomeArea {
+  
+  background-image: url(./img/puzzle1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; 
+  height: 100px;
+  margin-left: 0px;
+
+}
+
+    .myname >  a {
+
+      font-family: electrical;
+      font-size: 16px;
+      margin-left: 0px;
+    }
+
+    .icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 5px;
+     }
+    .LowerFeatured {         
+      margin-right: 00px;
+      margin-bottom: 30px;
+    }
+    .LowerHairstyle1{
+      height: auto;
+      font-size: 20px;
+      line-height: 20px;     
+     }
+
+     
+     .LowerHairstyle2 img{
+      margin-top: -19px;
+      margin-left: 0px;  
+      height: 110%;
+      max-height: 75px;
+    }
+    .bottomblocktext{
+      font-size: 20px;
+      line-height: 20px;     
+     }
+
+    .area1 p,.area2 p,.area3 p,.area4 p {
+      margin: 0px;
+      font-size: 16px;
+      font-style: italic;
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
+    .area1,.area2,.area3,.area4 {
+      margin: 0px;
+      font-size: 22px;
+      line-height: 22px;
+      padding-left:0px;
+      
+    }
+    .areabackground1, .areabackground2,.areabackground3, .areabackground4{
+      width: 150px;
+      height: 150px;
+      border-width: 10px;      
+    }
+
+    .LowerHairstyle1 a,.LowerFeatured a {
+     
+      padding: 10px;
+      font-size: 20px;
+    }
+    .LowerFeatured img{
+      width: 100px;
+      margin-top: 50px;
+      margin-left: 20px;
+    }
+    .LowerFeatured {      
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    
+    .WelcomeArea {
+      display: flex;
+      flex-direction: row;
+      flex-direction: column;
+      margin-bottom: 20px;
+      padding-left: 8px;
+       
+      
+    }
+    
+  
+  
+    
+    
+    /* section is for mobile menue*/
+    .header {
+      opacity: 0;
+      height: 0px;
+      margin-bottom: 0px;
+    }
+
+    .header2 img{
+      width: 90px;
+      position: absolute;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    .header2{
+      opacity: 1;
+      height: 60px;
+      background-color: rgb(100, 145, 100);   
+      margin: 0px;   
+    }
+
+    .testheight{
+      height:20px;
+      background-color: rgb(100, 145, 100);
+      margin: 0px;
+    }
+    .Infomess{
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 20px;
+      
+    }
+    .mobile-container {
+      max-width: 480px;
+      margin: auto;
+      background-color: #555;
+      height: auto;
+      color: white;          
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+    }
+    
+    .topnav #myLinks {
+      display: none;
+    }
+    
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 0px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .active {
+      background-color: #333;
+      color: white;
+    }
+
+    /*end of mobile menu*/
+ }
+
+
+  
+
+    
+
+  
+    @media (min-width: 799px) {
+
+      .topnav {
+        opacity: 0;
+        height: 0px;
+      }
+      .header2 {
+        opacity: 0;
+        height: 0px;
+        background-color: lightgrey;
+      }
+
+      .bodycontainer {
+        background-color: lightgray;
+        display: grid;  
+     
+       grid-template-columns: 10% 20% 20% 20% 20% 10%;
+       grid-template-areas: 
+       "leftm welcomea welcomea welcomea3 welcomea3  rightm"
+       "leftm welcomea welcomea welcomea2 welcomea2  rightm"
+       "leftm area1 area2 area3 area4 rightm"
+       "leftm lowerarea1 lowerarea1 lowerarea2 lowerarea2 rightm"
+       "leftm lowerarea1 lowerarea1 lowerarea3 lowerarea3 rightm";
+     
+      }
+     
+    }
+  
+
+  

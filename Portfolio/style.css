@@ -1,0 +1,370 @@
+@font-face{
+  font-family: electrical;
+  src: url(./img/electrical.ttf);
+}
+
+
+
+dl {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ .logo {   
+   width: 150px; 
+   margin: 10%, 1%;
+   margin-left: 5%;
+   margin-top: -30px;
+   margin-bottom: -30px;
+   z-index: 2;
+   
+ }
+
+ 
+ .entireheader {
+  background-color: rgb(100, 145, 100);
+}
+  .conthead{
+    width: 20%;
+    }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  .header {
+    display: flex;
+    height: 90px;
+    background-color: rgb(100, 145, 100);
+    justify-content: right; 
+    width: 100%;    
+  }
+ 
+  .myname {
+    background-color: rgb(100, 145, 100);
+    text-align: center;
+    padding-top: 30px;
+    
+ 
+  }
+
+  .myname >  a {
+
+    font-family: electrical;
+    font-size: 30px;
+    margin-left:80px;
+  }
+
+  .topnav{
+   height: auto;
+  }
+
+  .Links {
+    width: 80%;  
+   
+    align-self: flex-end;
+    margin-bottom: 8px;
+    
+    }
+   
+.header a:link, .header a:visited {    
+    
+    background: Black;
+    border-radius: 10%;
+    padding: 1%;
+    font-size: 15px;
+    
+    color: white;
+    text-decoration: none;   
+    text-align: center; 
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+ body {
+
+   background-color: lightgray;
+ }
+
+ .intro2 {
+   grid-area: introarea2;
+   background-image: url(./img/blogim.jpg);
+   background-size: cover;  
+   background-repeat: no-repeat;
+   background-position: left;
+ 
+ }
+ .intro {
+  grid-area: introarea;
+  width: 100%;
+  height: 200px;
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+
+}
+
+ .container1, .container2, .container3, .container4, .container5, .container6
+ {
+     position: relative;
+     width: 100%;
+     border-width: 10px;
+     border: #3F729B;
+     border-style: solid; 
+     background-size: cover;  
+     background-repeat: no-repeat;
+     background-position: left;
+     box-shadow: 5px 10px 20px;
+     
+ }
+   
+main a:link, main a:visited
+ {
+  text-decoration: none;   
+  text-align: center; 
+  color: blue;
+  background-color: white;
+  padding:5px;
+  margin-top: 100px;
+ }
+
+ body a:hover {
+   color: red;
+ }
+ 
+   .image {
+     display: block;
+     width: 100px;
+     height: auto;
+   }
+   
+   
+    
+   
+ 
+  .photogall {
+       display:grid;
+   }
+ 
+ .leftmarg{
+      grid-area: leftmar;
+ }
+ .rightmarg{
+  grid-area: rightmar;
+}
+
+ 
+     .container1 {
+       grid-area: con1;
+      
+       background-image: url(./img/funarticle.jpg);  
+   
+     }
+ 
+     .container2 {
+     grid-area: con2; 
+     background-image: url(./img/learningcode.jpg);    
+     
+ 
+     }
+     .container3 {
+         grid-area: con3;
+         background-image: url(./img/javascript.jpg);
+        
+     }
+ 
+     .container4 {
+     grid-area: con4;
+     background-image: url(./img/responsive.png);
+     }
+     
+     .container5 {
+         grid-area: con5;
+         background-image: url(./img/pcode.png);
+         background-repeat: repeat;
+        
+       }
+   
+       .container6 {
+       grid-area: con6;   
+       background-image: url(./img/austincode.png);
+ 
+       }
+ 
+       
+    
+
+
+  @media (min-width: 799px) {
+    .topnav {
+      opacity: 0;
+      height: 0px;
+    }
+    .header2 {
+      opacity: 0;
+      height: 0px;
+      background-color: lightgrey;
+    }
+
+     .photogall {
+      grid-template-rows: 200px 200px 200px 200px 200px;
+      grid-template-columns: 5% 20% 20% 20% 20% 5%;
+      grid-template-areas: 
+      "leftmar introarea2 introarea introarea introarea rightmar"
+      "leftmar con1 con1 con2 con2 rightmar"
+      "leftmar con3 con3 con4 con4 rightmar"
+      "leftmar con5 con5 con6 con6 rightmar"
+      ;
+      row-gap: 25px;
+      column-gap: 25px;
+      margin-top: 50px; 
+   }
+
+
+   }
+   
+   @media (max-width: 800px) {
+     .photogall {
+       grid-template-rows: 100px 300px 300px 300px 300px 300px 300px  ;
+       grid-template-columns: 10% 80% 10%;
+       row-gap: 25px;
+       grid-template-areas:
+       "leftmar introarea rightmar"  
+       "leftmar con1 rightmar"
+         "leftmar con2 rightmar"
+         "leftmar con3 rightmar"
+         "leftmar con4 rightmar"
+         "leftmar con5 rightmar"
+         "leftmar con6 rightmar"
+        ; }
+     
+         .footer a {
+          margin-left: 5px;
+          margin-right: 5px;}
+          
+        .icons{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-top: 5px;
+    }
+      
+        .footer img {
+          width: 50px;
+          margin-top: 10px;
+           }
+      
+        .needsmaller {
+          max-width: 30px;
+        }  
+        
+        
+        /* section is for mobile menue*/
+        .header {
+          opacity: 0;
+          height: 0px;
+        }
+  
+        .header2 img{
+          width: 90px;
+          position: absolute;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+        .header2{
+          height: 60px;
+          background-color: rgb(100, 145, 100);
+          
+        }
+        .myname >  a {
+  
+         font-family: electrical;
+         font-size: 12px;
+         margin-left: 0px;
+       }
+  
+       .testheight{
+         height:30px;
+         background-color: rgb(100, 145, 100);
+         margin: 0px;
+       }
+        .Infomess{
+          color: white;
+          text-align: center;
+          padding-top: 20px;
+          font-size: 20px;
+          font-family: hairfont;
+        }
+        .mobile-container {
+          max-width: 480px;
+          margin: auto;
+          background-color: #555;
+          height: auto;
+          color: white;
+          
+
+          
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+          position: relative;
+        }
+        
+        .topnav #myLinks {
+          display: none;
+        }
+        
+        .topnav a {
+          color: white;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          display: block;
+        }
+        
+        .topnav a.icon {
+          background: black;
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .active {
+          background-color: rgb(100, 145, 100);
+          color: white;
+        }
+
+        /*end of mobile menu*/
+     }
+     .text {
+         
+         font-size: 50px;
+     }
+  
+
+  .footer {
+    background-color: rgb(100, 145, 100);
+    width: 100%;
+    padding: 25px;
+    
+    text-align: center;
+    
+  }
+
+ 
+
+
+  
+
+  
+
+ 
+  
