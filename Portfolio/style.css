@@ -88,10 +88,11 @@ dl {
 
  .intro2 {
    grid-area: introarea2;
-   background-image: url(./img/blogim.jpg);
+   background-image: url(./img/projects.jpg);
    background-size: cover;  
    background-repeat: no-repeat;
    background-position: left;
+   margin-right: 20px;
  
  }
  .intro {
@@ -104,10 +105,10 @@ dl {
 
 }
 
- .container1, .container2, .container3, .container4, .container5, .container6
+ .container1, .container2, .container3, .container4, .container5, .container6, .container7,.container8, .container9
  {
      position: relative;
-     width: 100%;
+     width: 90%;
      border-width: 10px;
      border: #3F729B;
      border-style: solid; 
@@ -115,6 +116,7 @@ dl {
      background-repeat: no-repeat;
      background-position: left;
      box-shadow: 5px 10px 20px;
+     
      
  }
    
@@ -153,47 +155,63 @@ main a:link, main a:visited
   grid-area: rightmar;
 }
 
+
+   .container0 {
+     grid-area: con0;
+    background-image: url(./img/ctransformer.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position: bottom;
+    margin-right: 10px;
+   }
  
      .container1 {
-       grid-area: con1;
-      
-       background-image: url(./img/funarticle.jpg);  
+       grid-area: con1;      
+       background-image: url(./img/NASA.JPG);  
    
      }
  
      .container2 {
      grid-area: con2; 
-     background-image: url(./img/learningcode.jpg);    
-     
- 
-     }
+     background-image: url(./img/Tictac.JPG);      
+      }
+
      .container3 {
          grid-area: con3;
-         background-image: url(./img/javascript.jpg);
-        
+         background-image: url(./img/gridlay.JPG); 
      }
  
      .container4 {
      grid-area: con4;
-     background-image: url(./img/responsive.png);
+     background-image: url(./img/calculator.JPG);
      }
      
      .container5 {
          grid-area: con5;
-         background-image: url(./img/pcode.png);
-         background-repeat: repeat;
-        
+         background-image: url(./img/Imagegal.JPG);
+         background-repeat: repeat;        
        }
    
        .container6 {
        grid-area: con6;   
-       background-image: url(./img/austincode.png);
- 
+       background-image: url(./img/hairsal.JPG); 
        }
  
-       
+       .container7 {
+        grid-area: con7;   
+        background-image: url(./img/dummy.JPG); 
+        }
     
+      .container8 {
+       grid-area: con8;   
+       background-image: url(./img/deerhunt.JPG); 
+          }
 
+      .container9 {
+       grid-area: con9;   
+       background-image: url(./img/numberwiz.JPG); 
+            } 
 
   @media (min-width: 799px) {
     .topnav {
@@ -208,15 +226,15 @@ main a:link, main a:visited
 
      .photogall {
       grid-template-rows: 200px 200px 200px 200px 200px;
-      grid-template-columns: 5% 20% 20% 20% 20% 5%;
+      grid-template-columns: 2% 25% 23% 23% 25% 2%;
       grid-template-areas: 
       "leftmar introarea2 introarea introarea introarea rightmar"
-      "leftmar con1 con1 con2 con2 rightmar"
-      "leftmar con3 con3 con4 con4 rightmar"
-      "leftmar con5 con5 con6 con6 rightmar"
+      "leftmar con1 con0 con0 con2 rightmar"
+      "leftmar con3 con0 con0 con4 rightmar"
+      "leftmar con5 con0 con0 con6 rightmar"
+      "leftmar con7 con8 con9 - rightmar"
       ;
       row-gap: 25px;
-      column-gap: 25px;
       margin-top: 50px; 
    }
 
