@@ -104,7 +104,7 @@ dl {
  .intro {
   grid-area: introarea;
   width: 100%;
-  height: 200px;
+  padding-bottom: 20px;
   font-size: 20px;
   color: white;
   font-style: italic;
@@ -134,7 +134,7 @@ main a:link, main a:visited
   text-decoration: none;   
   text-align: center; 
   color: blue;
-  background-color: white;
+  background-color: rgb(236, 235, 235);
   padding:5px;
   margin-top: 100px;
  }
@@ -235,106 +235,138 @@ main a:link, main a:visited
     margin-top: 40px;
    }
  
+    main a{
+      border-color: green;
+      border-width: 15px;
+      border-radius: 10px;
+      background-color: gray;
+    }
+
      .container1 {
+      padding-top:5px;
+      padding-left:5px;
        grid-area: con1;      
        background-image: url(./img/NASA.JPG);  
    
      }
  
      .container2 {
+      padding-top:5px;
+      padding-left:5px;
      grid-area: con2; 
      background-image: url(./img/Tictac.JPG);      
       }
 
      .container3 {
+      padding-top:5px;
+      padding-left:5px;
          grid-area: con3;
          background-image: url(./img/gridlay.JPG); 
      }
  
      .container4 {
+      padding-top:5px;
+      padding-left:5px;
      grid-area: con4;
      background-image: url(./img/calculator.JPG);
      }
      
      .container5 {
+      padding-top:5px;
+      padding-left:5px;
          grid-area: con5;
          background-image: url(./img/Imagegal.JPG);
          background-repeat: repeat;        
        }
    
        .container6 {
+        padding-top:5px;
+        padding-left:5px;
        grid-area: con6;   
        background-image: url(./img/hairsal.JPG); 
        }
  
        .container7 {
+        padding-top:5px;
+        padding-left:5px;
         grid-area: con7;   
         background-image: url(./img/dummy.JPG); 
         }
     
       .container8 {
+        padding-top:5px;
+        padding-left:5px;
        grid-area: con8;   
        background-image: url(./img/deerhunt.JPG); 
           }
 
       .container9 {
+        padding-top:5px;
+        padding-left:5px;
        grid-area: con9;   
        background-image: url(./img/numberwiz.JPG); 
             } 
 
   @media (min-width: 799px) {
+
     .topnav {
       opacity: 0;
-      height: 0px;
-    }
+      height: 0px;}
+
     .header2 {
       opacity: 0;
       height: 0px;
-      background-color: lightgrey;
-    }
+      background-color: lightgrey; }
 
      .photogall {
-      grid-template-rows: 200px 200px 200px 200px 200px;
+      display: grid;
+      grid-template-rows: 220px 200px 200px 200px 200px;
       grid-template-columns: 2% 25% 23% 23% 25% 2%;
       grid-template-areas: 
       "leftmar introarea2 introarea introarea introarea rightmar"
       "leftmar con1 con0 con0 con2 rightmar"
       "leftmar con3 con0 con0 con4 rightmar"
       "leftmar con5 con0 con0 con6 rightmar"
-      "leftmar con7 con8 con9 - rightmar"
+      "leftmar con9 con7 con8 - rightmar"
       ;
       row-gap: 25px;
-      margin-top: 50px; 
-   }
+      margin-top: 50px;  }
 
 
    }
    
    @media (max-width: 800px) {
-     .photogall {
-       grid-template-rows: 100px 300px 300px 300px 300px 300px 300px  ;
-       grid-template-columns: 10% 80% 10%;
-       row-gap: 25px;
+
+
+     .photogall {      
+       display: grid;
+       grid-template-columns: 1% 98% 1%;
        grid-template-areas:
        "leftmar introarea rightmar"  
+       "leftmar con0 rightmar"
        "leftmar con1 rightmar"
          "leftmar con2 rightmar"
          "leftmar con3 rightmar"
          "leftmar con4 rightmar"
          "leftmar con5 rightmar"
          "leftmar con6 rightmar"
+         "leftmar con7 rightmar"
+         "leftmar con8 rightmar"
+         "leftmar con9 rightmar"        
         ; }
      
-         .footer a {
-          margin-left: 5px;
-          margin-right: 5px;}
-          
-        .icons{
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     margin-top: 5px;
-    }
+        .container1, .container2,.container3, .container4,.container5, .container6,.container7, .container8,.container9{
+          height:200px;
+          margin-top: 20px;
+          margin-bottom:20px;
+        }
+
+        .container0{
+          padding-bottom:150px;
+        }
+        .modal-content> img{
+          width: 300px;
+        }
       
         .footer img {
           width: 50px;
@@ -431,6 +463,10 @@ main a:link, main a:visited
 
         /*end of mobile menu*/
      }
+
+
+
+
      .text {
          
          font-size: 50px;
