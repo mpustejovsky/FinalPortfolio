@@ -86,6 +86,12 @@ dl {
    background-color: lightgray;
  }
 
+ .title{
+  font-family: electrical;
+  color: green;
+  text-align: center;
+ }
+
  .intro2 {
    grid-area: introarea2;
    background-image: url(./img/projects.jpg);
@@ -161,9 +167,11 @@ main a:link, main a:visited
     background-image: url(./img/ctransformer.png);
     background-color: white;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 500px;
     background-position: bottom;
     margin-right: 10px;
+    padding: 20px;
+    margin-top: 40px;
    }
  
      .container1 {

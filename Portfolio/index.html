@@ -60,9 +60,22 @@
   <div class="intro">Check out some of the projects I have developed.<br><br>  Also checkout the Featured Area. I am studing Webdevelopment in order to make interactive training.  Most technicans need hands on learning in order to understand material.  This is one of the reasons they choose hands on type work in the first place.  They learn by doing.  Therefore hands on classes are the most effective way to teach technicans, but it is very costly.  The next best thing is interactive training that allows simulation of hands on through virtual learning.  In the Featured Area I have a simple example to learn a few properties of a current transformers. </div>
  
   <div class ="container0">
-  <div class ="Title">Featured Area</div>
-  <p> Note tha the CT below has a ratio of 100/5.</p>
-  </div>
+  <div class ="title">Featured Area</div>
+  <p> Input the amount of Primary Current in the circuit, to see the seondary circuit and voltage developed to push the current through the 5 ohm load.<br></p>
+  <form>
+  <label for="primaryc">Primary Current</label>
+  <input type="number" id="primaryc" name="primaryc" onkeyup="saveFirstNumber(this.value)">
+  <button type="button" onclick="calculate()">ENTER</button>
+   </form>
+
+   <div class="nameplate"><br>Nameplate info:<ul>
+   <li>Ratio 100/5</li>
+   <li>Class 100</li></ul></div>
+   
+   <div id="selection">Primary Current= ?</div>
+   <div id="secondaryc">Secondary Current= ?</div>
+   <div id="voltage">CT Voltage= ?</div>
+</div>
 
   <div class="container1">
 
