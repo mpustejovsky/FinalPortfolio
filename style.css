@@ -239,7 +239,7 @@ grid-area: rightm;
   padding-top: 5px;
   padding-bottom: 5px;
   color:  black;
-
+  max-height: 20px;
   border-width: 20px;
   margin-top: 70px; 
   border-width: 10px;
