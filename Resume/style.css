@@ -134,6 +134,12 @@
 .backg2{
   display: none;
 }
+
+.backg a{
+  text-decoration: none;  
+  color: white;
+  font-size: 12px;
+}
 .backg {
   background-color: rgb(74, 149, 173);
   grid-area: sec4;

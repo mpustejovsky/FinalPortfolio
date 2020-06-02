@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="main.js"></script>
+  
 <title>Mark P</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,15 +13,15 @@
 </head>
 <body onload="nextImage()">
 
-<div class="entireheader">
-<div class="myname"><a>Mark Pustejovsky's Site</a></div>
+<div class="entireheader" >
+<div class="myname"><a id="explode1">Mark Pustejovsky's Site</a></div>
 <div class="header">
   <div class="conthead">
-  <img src="./img/myProfilePic.png" class="logo" alt="Photo of Mark P"></div>
-<div class="Links">
+  <img src="./img/myProfilePic.png" id="logo"  alt="Photo of Mark P"></div>
+<div class="Links" id = "explode2">
  
   <a href="https://mpustejovsky.github.io/FinalPortfolio/Resume" target="">RESUME</a>
-  <a href="https://mpustejovsky.github.io/FinalPortfolio/About" target="">ABOUT ME</a>
+  <a href="https://mpustejovsky.github.io/hairSalonWebsite/About">ABOUT ME</a>
   <a href="https://mpustejovsky.github.io/FinalPortfolio/Blog">MY BLOG</a>
   <a href="https://mpustejovsky.github.io/FinalPortfolio/Portfolio" target="">PORTFOLIO</a>
   <a href="https://mpustejovsky.github.io/FinalPortfolio/Contact" target="">CONTACT ME</a>
@@ -29,7 +29,7 @@
 </div>
 
 <div class="header2"> 
-  <img src="./img/myProfilePic.png" class="logo" alt="Photo of Mark P"> <div class="Infomess">HOME PAGE</div>
+  <img src="./img/myProfilePic.png" class="logo" id="logo2" alt="Photo of Mark P"> <div class="Infomess">HOME PAGE</div>
 </div>
 <div class="mobile-container"></div>
 <div class="topnav">
@@ -51,8 +51,14 @@
 <main>
 <div class="bodycontainer">
 
-  <div class="leftmarg"></div>
-<div class="rightmarg"></div>
+  <div class="leftmarg">
+    <canvas id="gameCanvas" >
+    </canvas>
+  </div>
+<div class="rightmarg">
+  <canvas id="gameCanvas2" >
+  </canvas>
+</div>
 
 
 <div id="WelcomeArea" > 
@@ -63,7 +69,7 @@
 </div>
 
 
-<div id="WelcomeArea3" > Skills Include: HTML Development </div>
+<div id="WelcomeArea3"> Skills Include: HTML Development </div>
 <div id="WelcomeArea2" > 
   <div id="wpar2">
   </div>
@@ -71,21 +77,29 @@
 </div>
 </div>
 
+<div id="WelcomeArea4"><div  class="blinking" id="blinky">PRESS START TO ELECTROFIY THIS PAGE</div>
+  <div>Select the number of electrons from 1 to 100 </div>
+  <button id="startelect" onclick="startelec()">Start</button>
+  <button id="stopelect" onclick="stopelec()">Stop</button>
+  <input type="number" id="Number-balls" name="first-Number" placeholder="# Elect" min="1" max="100" value="" onkeyup="saveNumberBalls(this.value)">
+  <p>(default set to 20)</p>
+
+</div>
   <div class="area1">
     <div class="areabackground1"></div>
-    <br><a>Resume</a><p>I am looking to use my skills in both Full Webstack Development & Electrical Power Engineering to help automate production and develop virtual training for a electrical field service provider.</p></div>
+    <br><a href="https://mpustejovsky.github.io/FinalPortfolio/Resume" target="">Resume</a><p>I am looking to use my skills in both Full Webstack Development & Electrical Power Engineering to help automate production and develop virtual training for a electrical field service provider.</p></div>
   <div class="area2">
     <div class="areabackground2" ></div>
     <br><a href="https://mpustejovsky.github.io/hairSalonWebsite/About">About Me</a>
   <p>I enjoy a challenge.  Professionally I enjoy teaching others, and designing and implementing processes to help make workers more productive.  In my leisure time I enjoy the outdoors.</p></div>
   <div class="area3">
     <div class="areabackground3"></div>
-    <br><a>My Blog</a>
+    <br><a href="https://mpustejovsky.github.io/FinalPortfolio/Blog">My Blog</a>
     <p>Check out my blog page, where I blog during my journey at Austing Coding Academy.  See how I progressed during this 8 week program.</p>
   </div>
   <div class="area4">
     <div class="areabackground4"></div>
-    <br><a>Portfolio</a>
+    <br><a href="https://mpustejovsky.github.io/FinalPortfolio/Contact" target="">Portfolio</a>
     <p>I have been building different websites to show the Web Development Skills that I have been learning.  I have been progressively learning more and how to make webpages interesting.</p>
   </div>
 
@@ -124,7 +138,7 @@
   </div>
   <div class="LowerHairstyle2">
   <img src="./img/contactme.png" alt="Featured hair cut">
-  <span class="bottomblocktext">Want to know more about me.  Please visit my Contact Page</span> 
+  <span class="bottomblocktext"><a href="https://mpustejovsky.github.io/FinalPortfolio/Contact" target="">Contact Me</a><p>Want to know more about me.  Please visit my Contact Page</p></span> 
   </div>
 
 
@@ -135,14 +149,9 @@
 
 <div class="footer">   
   <div class="typing"> © copyright 2020 | all rights reserved</div>
-  <!--<div class="icons">
-  <a href="https://twitter.com/explore" target="_blank" ><img src="./img/twitter.png" alt="twitter"></a>
-  <a href="https://twitter.com/explore" target="_blank" ><img src="./img/facebook.jpg" alt="facebook" class="needsmaller"></a>
-  <a href="https://www.linkedin.com/" target="_blank" ><img src="./img/linkedin.png" alt="linkedin"></a>
-  <a href="http://pintrest.com/" target="_blank" ><img src="./img/pintrest.png" alt="pintrest"></a>
-
-</div>-->
+  
    
 </div>
+<script src="main.js"></script>
 </body>
 </html>
