@@ -155,11 +155,8 @@ main p{
 
 
 
-  
 
-
-
-  @media (min-width: 799px) {
+  @media (min-width: 768px) {
     .topnav {
       opacity: 0;
       height: 0px;
@@ -170,6 +167,59 @@ main p{
       background-color: lightgrey;
     }
 
+
+    .section1, .section2, .section3, .section4{
+      width: 275px;
+      height: 275px;
+      margin-left: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bolder;
+      }
+    main{
+      width: 100%;
+      display: grid;
+    grid-template-columns: 0.5% 49.5% 49.5% 0.5%;
+    grid-template-areas: 
+    "leftm sec0 sec0 rightm"
+    "leftm sec1 sec2 rightm"
+    "leftm sec3 sec4 rightm";
+    }
+
+    .myname >  a {
+
+      font-size: 20px;
+      
+    }
+ }
+  
+
+
+
+  @media (min-width: 1010px) {
+    .topnav {
+      opacity: 0;
+      height: 0px;
+    }
+    .header2 {
+      opacity: 0;
+      height: 0px;
+      background-color: lightgrey;
+    }
+
+    .myname >  a {
+
+      font-size: 30px;
+      
+    }
+    .section1, .section2, .section3, .section4{
+      width: 350px;
+      height: 350px;
+      margin-left: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bolder;
+      }
     main{
       width: 100%;
       display: grid;
@@ -185,7 +235,7 @@ main p{
 
 
 
-  @media (max-width: 800px) {
+  @media (max-width: 769px) {
     
     main{
       padding-top: 30px;

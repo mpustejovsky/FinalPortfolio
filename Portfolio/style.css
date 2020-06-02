@@ -307,7 +307,46 @@ main a:link, main a:visited
        background-image: url(./img/numberwiz.JPG); 
             } 
 
-  @media (min-width: 799px) {
+  @media (min-width: 800px) {
+
+    .topnav {
+      opacity: 0;
+      height: 0px;}
+
+    .header2 {
+      opacity: 0;
+      height: 0px;
+      background-color: lightgrey; }
+
+     .photogall {
+      display: grid;
+      grid-template-rows: 220px 200px 200px 200px 200px 200px 200px;
+      grid-template-columns: 1% 24% 24% 24% 24% 1%;
+      grid-template-areas: 
+      "leftmar introarea introarea introarea introarea rightmar"
+      "leftmar con0 con0 con1 con1 rightmar"
+      "leftmar con0 con0 con2 con2 rightmar"
+      "leftmar con0 con0 con3 con3 rightmar"
+      "leftmar con4 con4 con5 con5 rightmar"
+      "leftmar con6 con6 con7 con7 rightmar"
+      "leftmar con8 con8 con9 con9 rightmar"
+      ;
+      row-gap: 25px;
+      margin-top: 50px;  }
+
+      .container0 {
+       padding-top: 0px;
+       background-color: white;
+       background-repeat: no-repeat;
+       height: 550px;
+       
+      }
+    
+
+
+   }
+
+   @media (min-width: 992px) {
 
     .topnav {
       opacity: 0;
@@ -335,7 +374,7 @@ main a:link, main a:visited
 
    }
    
-   @media (max-width: 800px) {
+   @media (max-width: 799px) {
 
 
      .photogall {      

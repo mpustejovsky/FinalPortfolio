@@ -91,22 +91,7 @@
   grid-area: rightm;
 }
 
-main{
-  display: grid;
-  grid-template-columns: 5% 25% 65% 5%;
-  grid-template-areas: 
-  "leftm sec1 sec3 rightm"
-  "leftm sec1 sec3 rightm"
-  "leftm sec4 sec5 rightm"
-  "leftm sec4 sec6 rightm"
-  "leftm sec4 sec7 rightm"
-  "leftm sec4 sec7 rightm"
-  "leftm sec4 sec8 rightm" 
-  "leftm sec4 sec8 rightm" ;
-grid-column-gap: 14pt;
-grid-row-gap: 2pt;
-  border: solid blue 1pt;
-}
+
 
 #image_sub {
   grid-area: sec1;
@@ -143,7 +128,12 @@ grid-row-gap: 2pt;
   color: grey;
 }
 
-
+.backg img{
+  width: 50px;
+}
+.backg2{
+  display: none;
+}
 .backg {
   background-color: rgb(74, 149, 173);
   grid-area: sec4;
@@ -252,26 +242,15 @@ main p{
   .footer {
     background-color: rgb(100, 145, 100);
     width: 100%;
-    padding: 25px;    
+    padding-top: 25px;
+    padding-bottom:25px;    
     text-align: center;
     
   }
 
-  .footer a {
-    margin-left: 5px;
-    margin-right: 5px;
-    float: right;    
-  }
 
-  .footer img {
-    width: 35px;
-     }
 
-  .needsmaller {
-    max-width: 20px;
-  }
-
-  @media (min-width: 799px) {
+  @media (min-width: 750px) {
 
     .topnav {
       opacity: 0;
@@ -282,10 +261,93 @@ main p{
       height: 0px;
       background-color: lightgrey;
     }
+    .backg {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(74, 149, 173);
+      text-align: center;
+      color: white;
+      font-size: 12px;
+    } 
+
+    .backg > img{
+      width: 25px;
+    }
+    .backg2 > section{
+      
+      padding-left: 65px;
+    }
+    .backg2 {
+      display: flex;
+      flex-direction: row;
+      padding-top:20px;
+    }
+
+    .backg1{
+      display:none;
+    }
+    main{
+      display:grid;
+      grid-template-columns: 100%;
+      row-gap: 25px;
+      gap: 0px;
+      grid-template-areas:
+        "sec1"
+         "sec3"
+         "sec5"
+         "sec6"
+         "sec7"
+         "sec8"
+         "sec4"
+         ; }
   
+    }
+
+
+  @media (min-width: 800px) {
+
+    .topnav {
+      opacity: 0;
+      height: 0px;
+    }
+    .header2 {
+      opacity: 0;
+      height: 0px;
+      background-color: lightgrey;
+    }
+    .backg {
+      display: block;
+      background-color: rgb(74, 149, 173);
+      text-align: center;
+      color: white;
+      font-size: 12px;
+    } 
+
+    .backg2{
+      display:none;
+    }
+    .backg1{
+      display:block;
+    }
+    main{
+      display: grid;
+      grid-template-columns: 5% 25% 65% 5%;
+      grid-template-areas: 
+      "leftm sec1 sec3 rightm"
+      "leftm sec1 sec3 rightm"
+      "leftm sec4 sec5 rightm"
+      "leftm sec4 sec6 rightm"
+      "leftm sec4 sec7 rightm"
+      "leftm sec4 sec7 rightm"
+      "leftm sec4 sec8 rightm" 
+      "leftm sec4 sec8 rightm" ;
+    grid-column-gap: 14pt;
+    grid-row-gap: 2pt;
+      border: solid blue 1pt;
+    }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 751px) { 
   
     
     .icons{
@@ -296,6 +358,7 @@ main p{
      }
 
     main{
+      display: grid;
     grid-template-columns: 2% 96% 2%;
     row-gap: 25px;
     gap: 0px;
@@ -438,3 +501,4 @@ main p{
      }
     }
      /*end of mobile menu*/
+  

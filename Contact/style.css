@@ -110,7 +110,7 @@ main p{
 
   /* Set a specific height */
   min-height: 200px; 
-
+  margin-right: 20px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -196,7 +196,7 @@ main p{
   .Step2, .Step1{
     padding-top: 10px;
   }
-  @media (max-width: 799px) {
+  @media (max-width: 769px) {
     .container {
       grid-template-columns: 100%;
       grid-template-areas:
@@ -316,8 +316,37 @@ main p{
           /*end of mobile menu*/
   }
   
-        
-        @media (min-width: 800px) {
+   
+  @media (min-width: 768px){
+    .topnav {
+      opacity: 0;
+      height: 0px;
+    }
+    .header2 {
+      opacity: 0;
+      height: 0px;
+      background-color: lightgrey;
+    }
+
+    .ContactData {
+      display: grid;
+        grid-auto-columns: 40% 40% 20%;
+        grid-template-areas: 
+        "st1 st2 stblank"
+        "st3 st4 st5"
+      }
+  .myname >  a {    
+    font-size: 20px;
+  }
+  main{
+    
+    padding-left: 50px;
+   
+  }
+  }
+  
+
+        @media (min-width: 992px) {
           .topnav {
             opacity: 0;
             height: 0px;
@@ -335,7 +364,9 @@ main p{
               "st1 st2 stblank"
               "st3 st4 st5"
             }
-  
+            .myname >  a {    
+              font-size: 30px;
+            }
         }
   
 

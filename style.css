@@ -377,7 +377,7 @@ grid-area: rightm;
   }
   
 
-  @media (max-width: 800px) {
+  @media (max-width: 760px) {
        
     .bodycontainer{
       display: grid;  
@@ -591,10 +591,62 @@ grid-area: rightm;
   
 
     
+ @media (min-width: 761px) {
+  .area1, .area2, .area3, .area4{
+    padding-left: 5%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .areabackground1, .areabackground2,.areabackground3, .areabackground4{
+    width: 100px;
+    height: 100px;
+    border-width: 10px;
+    border: #3F729B;
+    border-style: solid; 
+    background-size: cover;
+  }
+  .topnav {
+    opacity: 0;
+    height: 0px;
+  }
+  .header2 {
+    opacity: 0;
+    height: 0px;
+    background-color: lightgrey;
+  }
 
+  .bodycontainer {
+    background-color: lightgray;
+    display: grid;  
+ 
+   grid-template-columns: 10% 20% 20% 20% 20% 10%;
+   grid-template-areas: 
+   "leftm welcomea welcomea welcomea3 welcomea3  rightm"
+   "leftm welcomea welcomea welcomea2 welcomea2  rightm"
+   "leftm area1 area2 area3 area4 rightm"
+   "leftm lowerarea1 lowerarea1 lowerarea2 lowerarea2 rightm"
+   "leftm lowerarea1 lowerarea1 lowerarea3 lowerarea3 rightm";
+ 
+  }
+ 
+}
   
-    @media (min-width: 799px) {
-
+    @media (min-width: 922px) {
+      .area1, .area2, .area3, .area4{
+        padding-left: 5%;
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .areabackground1, .areabackground2,.areabackground3, .areabackground4{
+        width: 175px;
+        height: 175px;
+        border-width: 10px;
+        border: #3F729B;
+        border-style: solid; 
+        background-size: cover;
+      }
       .topnav {
         opacity: 0;
         height: 0px;
