@@ -190,9 +190,9 @@ if (by[i]+bs/2 > canvas.height && yv[i] >0){
 
 
 //draw background and ball 
-context.fillStyle = "black";
+context.fillStyle = "lightgray";
 context.fillRect(0,0,canvas.width, canvas.height);
-context2.fillStyle = "black";
+context2.fillStyle = "lightgray";
 context2.fillRect(0,0,canvas2.width, canvas2.height);
 
 
