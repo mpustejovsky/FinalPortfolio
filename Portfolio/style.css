@@ -3,7 +3,17 @@
   src: url(./img/electrical.ttf);
 }
 
-
+/*Blinking Text Class*/
+.blinking{
+  animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+  0%{     color: red;    }
+  49%{    color: red; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: red; }
+}
 
 dl {
   margin-top: 0px;
@@ -225,15 +235,126 @@ main a:link, main a:visited
 
    .container0 {
      grid-area: con0;
-    background-image: url(./img/ctransformer.png);
     background-color: white;
     background-repeat: no-repeat;
-    height: 550px;
+    height: 700px;
     background-position: bottom;
     margin-right: 10px;
     padding: 20px;
     margin-top: 40px;
+    position: relative;
    }
+
+   /*------------------------------------------------------new code--*/
+   
+
+.backgroundarea{
+  background-image: url(./img/ctransformer.png);
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 0pt;
+}
+
+#leadpoint1 {
+  height: 100px;
+  width: 20px;
+  position: absolute;
+  bottom:40px;
+  right:28px;
+  align-items: baseline;
+}
+.testpoint1 {
+  height: 10px;
+  width: 20px;
+  background-color: red;
+  position: absolute;
+  bottom:40px;
+  right:28px;
+  align-items: baseline;
+}
+.testpoint2 {
+  height: 10px;
+  width: 20px;
+  background-color: red;
+  position: absolute;
+  bottom:150px;
+  right:28px;
+  align-items: baseline;
+}
+
+#leadpoint2 {
+  height: 120px;
+  width: 20px;
+  
+  position: absolute;
+  bottom:142px;
+  right:28px;  
+  
+}
+
+
+
+#meterback{
+  background-image: url(./img/meter_noleads2.png);
+  height: 300px;
+  width: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 100pt;
+  left:250pt;
+}
+
+#blacklead{
+  
+  height: 100px;
+  width: 40px;
+  transform: rotate(2deg);
+  
+
+}
+
+#redlead{
+ 
+  height: 100px;
+  width: 40px;
+  transform: rotate(2deg);
+}
+
+.meterplacement{
+  position: absolute;
+  bottom: 20pt;
+  left:245pt;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+#meterdisplay{
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  position: absolute;
+  width: 40px;
+  bottom:85px;
+  text-align: right;
+}
+
+.instructions{
+  font-size: 12px;
+  height: 20px;
+  width: 200px;
+  position: absolute;
+  bottom:0px;
+  right: -150px;
+}
+/*end new code-------------*/
+
  
     main a{
       border-color: green;
@@ -338,7 +459,7 @@ main a:link, main a:visited
        padding-top: 0px;
        background-color: white;
        background-repeat: no-repeat;
-       height: 550px;
+       height: 600px;
        
       }
     
@@ -359,7 +480,7 @@ main a:link, main a:visited
 
      .photogall {
       display: grid;
-      grid-template-rows: 220px 200px 200px 200px 200px;
+      grid-template-rows: 220px 250px 250px 250px 250px;
       grid-template-columns: 2% 25% 23% 23% 25% 2%;
       grid-template-areas: 
       "leftmar introarea2 introarea introarea introarea rightmar"

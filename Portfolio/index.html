@@ -75,6 +75,24 @@
    <div id="selection">Primary Current= ?</div><div id="warning"></div>
    <div id="secondaryc">Secondary Current= ?</div>
    <div id="voltage">CT Voltage= ?</div>
+
+   <div class="backgroundarea">
+    <div id="leadpoint1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class = "testpoint1">.</div>
+    <div id="leadpoint2" ondrop="drop2(event)" ondragover="allowDrop(event)">.</div>
+    <div class = "testpoint2">.</div>
+
+  <div id="meterback">
+    <div id="meterdisplay">????</div>
+ </div>
+ <div class="meterplacement">
+ <img id="blacklead" draggable="true" ondragstart="drag(event)"src="./img/black_meterlead2.png">
+
+ <img id="redlead" draggable="true" ondragstart="drag(event)" src="./img/red_meterlead2.png">
+
+</div>
+<div class="instructions blinking">Move Test Leads to Red Test Points</div>
+</div>
    
    
 

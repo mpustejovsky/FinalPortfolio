@@ -17,7 +17,7 @@ function myFunction() {
       pCurrent = parseInt(num)  }
 
   const calculate = () =>{
-    
+   
     document.getElementById("selection").innerHTML = "Primary Current= " + pCurrent
     sCurrent=pCurrent/20
     document.getElementById("secondaryc").innerHTML = "Secondary Current= " + sCurrent
@@ -32,10 +32,15 @@ function myFunction() {
             document.getElementById("voltage").style.color="black"
             }
             else{
-              {document.getElementById("voltage").innerHTML = "CT saturated and can only produce about 100V"
+              {document.getElementById("voltage").innerHTML = "CT SATURATED"
                document.getElementById("voltage").style.color="red"}
             }
-    
+   if ((blockdroping+blockdroping2)==2){
+    sVoltage1=Math.floor(sVoltage)
+    if (sVoltage>120){sVoltage1=120}
+  document.getElementById("meterdisplay").innerHTML = sVoltage1}
+
+
     if (sCurrent > 5){
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
@@ -62,3 +67,47 @@ function myFunction() {
     modal.style.display = "none";
   }
  
+  /*------------------------Drag and Drop Code -------*/
+  var blockdroping = 0;
+var blockdroping2 = 0;
+var black=0;
+var red=0;
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  if (blockdroping==0){
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+ 
+  var changeme = document.getElementById(data)
+  changeme.setAttribute('draggable',false);
+  blockdroping=1;}
+  if ((blockdroping+blockdroping2)==2){
+    sVoltage1=Math.floor(sVoltage)
+    if (sVoltage>120){sVoltage1=120}
+    document.getElementById("meterdisplay").innerHTML = sVoltage1}
+}
+function drop2(ev) {
+  if (blockdroping2==0){
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data)); 
+ 
+  var changeme = document.getElementById(data)
+  changeme.setAttribute('draggable',false);
+  blockdroping2=1;}
+  
+  if ((blockdroping+blockdroping2)==2){
+    sVoltage1=Math.floor(sVoltage)
+    if (sVoltage>120){sVoltage1=120}
+    document.getElementById("meterdisplay").innerHTML = sVoltage1}
+}
+
